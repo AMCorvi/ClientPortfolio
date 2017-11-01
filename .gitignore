@@ -19,3 +19,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.tern-port
+nvim-python.log_py3_rplugin
+nvim-python.log_py3_script
+
