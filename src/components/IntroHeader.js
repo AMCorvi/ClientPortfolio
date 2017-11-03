@@ -1,24 +1,20 @@
-import React, {Component} from "react";
+import React from "react";
 
 import {Grid, Header, Icon} from "semantic-ui-react";
 
-export default class extends Component {
-cool
-
-	render () {
+export default function () {
 		const styl = {
 			container: {
-					position:"relative",
-					top:80
+				margin: "80px 0px"
 			}
-  }
+		}
+
         return (
-					<div style={styl.container}>
-						<Grid padded="horizontally">
+						<Grid padded="horizontally" style={styl.container}>
 							<Grid.Row  centered>
 								<Grid.Column  width={8}>
 									<Header as="h2" textAlign="center" icon>
-										<Icon size="massive" name="photo"/>
+										<Icon size="massive" name="photo"  circular inverted/>
 										Multimedia Artist
 										<Header.Subheader>
 										Elit similique consectetur nihil iure libero harum. Perferendis aperiam velit maxime fugit quas Ipsa quis facere consequatur et id! Quam
@@ -27,10 +23,8 @@ cool
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
-					</div>
         )
  }
-}
 
 
 

@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Image} from 'semantic-ui-react';
 
-export default class extends Component {
-	render () {
+export default function (props) {
+	const styles = {
+		hero:{
+			backgroundColor: props.bgcolor
 
-			const styles = {
-				hero:{
-					background: "black"
+		}
+	}
 
-				}
-			}
+	return (
+		<div style={styles.hero}>
+			<Image src={require("../assets/K.Maxwell.png")} fluid/>
+		</div>
+	)
 
-			return (
-				<div style={styles.hero}>
-					<Image src={require("../assets/K.Maxwell.png")} fluid/>
-				</div>
-   )
- }
 }
