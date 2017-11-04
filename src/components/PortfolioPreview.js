@@ -2,60 +2,66 @@ import React from "react";
 
 import { Card
 				,Grid
-				,Header
 				,Button
 			} from "semantic-ui-react";
+import styled from "styled-components";
+import { space, fontSize } from "styled-system";
+import scale from "../utils/scale.js";
+
+
+Grid.Column = styled(Grid.Column)`
+				${fontSize}
+`
+
+const Button1 = styled(Button)`
+			${space}
+`
+
+const Container = styled.div`
+			${space}
+			border: 3px solid #EEE;
+			border-top: 0;
+			border-right: 0;
+			border-left: 0;
+`
+
+const LabelGrid = styled(Grid)`
+			${space}
+`
+
+
 
 export default function () {
 
-	const styl = {
-		hr: {
-			margin: "0px 30px"
-		}
-		,content: {
-			padding: "5em 0px"
-			,border: " 3px solid #EEE"
-			,borderTop: 0
-			,borderRight: 0
-			,borderLeft: 0
-		}
-		,label: {
-			marginBottom: "1em"
-		}
-		,button: {
-			marginTop: "3em"
-		}
-  }
-
   return (
-		<div style={Object.assign({},styl.hr,styl.content)}>
+		<Container my={scale[8]} mx={30} py={4}>
 
-			<Grid style={styl.label}>
+			<LabelGrid mx={4}  style={{marginBottom:8}} floated>
 				<Grid.Column width={4} floated="left">
-					<Header content="My Work" as="h3"/>
+					<span><h2>My Work</h2></span>
 				</Grid.Column>
-				<Grid.Column width={4} floated="right" textAlign="right">
+				<Grid.Column fontSize={2} width={4} floated="right" textAlign="right">
 					<span>More than just something to see</span>
 				</Grid.Column>
-			</Grid >
+			</LabelGrid >
 
 			<Card.Group itemsPerRow={3} doubling stackable centered>
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
-				<Card color="blue" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
+				<Card color="red" image={"https://picsum.photos/200/300?image="+ Math.ceil(Math.random() * 300)} />
 			</Card.Group>
 
 		<Grid textAlign="center">
 			<Grid.Column>
-				<Button size="huge" color="google plus" style={styl.button}>
+				<Button1 style={{marginTop:8*2}} size="huge" color="google plus" >
 					Full Portfolio
-				</Button>
+				</Button1>
 			</Grid.Column>
 		</Grid>
 
-		</div>
+		</Container>
   )
 }

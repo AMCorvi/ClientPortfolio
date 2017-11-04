@@ -11,6 +11,7 @@ const Container = styled(Grid)`
 				${wdth}
 				background: #d7d7d7;
 				border-bottom: 3px solid #EEE;
+				box-shadow: 3px 0px 30px 2px grey;
 `
 
 const FormContainer = styled(Form)`
@@ -21,6 +22,11 @@ const Input = styled(Form.Input)`
 				${space}
 				${fontSize}
 `
+
+const TextArea = styled(Form.TextArea)`
+				${fontSize}
+`
+
 
 class ContactForm extends React.Component {
 	render() {
@@ -38,7 +44,8 @@ class ContactForm extends React.Component {
 							<Input fontSize={2} label="Contact Number" placeholder="(631)-555-5555" />
 							<Input fontSize={2} label="Email" placeholder="Email" />
 						</Form.Group>
-						<Form.TextArea
+						<TextArea
+							fontSize={2}
 							label="Purpose Of Your Inquiry"
 							placeholder="Message"
 						/>

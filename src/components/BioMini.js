@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Grid,Header } from "semantic-ui-react";
+import scale from "../utils/scale.js";
 
 export default function () {
 	const styl = {
@@ -18,7 +19,12 @@ export default function () {
 		<div style={styl.hr}>
 				<Grid style={styl.content} centered padded='horizontally'>
 					<Grid.Column textAlign="center" width={8}>
-								<Header as="h3">
+								<Header
+									as="h3"
+									style = {{
+										fontSize: scale[5]
+									}}
+								>
 								Adipisicing eius fugit necessitatibus doloremque vel?
 								</Header >
 									<div>

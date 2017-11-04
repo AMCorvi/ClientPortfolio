@@ -1,8 +1,11 @@
 html {
-	font-family: 'Open Sans', sans-serif;
 }
 
-header {
+body .ui.header  {
 	font-family: 'Francois One', sans-serif;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 

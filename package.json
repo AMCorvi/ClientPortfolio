@@ -7,10 +7,12 @@
     "react-dom": "^16.0.0",
     "react-scale-text": "^1.1.2",
     "semantic-ui-react": "^0.75.1",
+    "simple-modular-scale": "^1.0.2",
     "styled-components": "^2.2.3",
     "styled-system": "^1.0.8"
   },
   "devDependencies": {
+    "prettier-eslint-cli": "^4.4.0",
     "react-scripts": "1.0.16"
   },
   "scripts": {

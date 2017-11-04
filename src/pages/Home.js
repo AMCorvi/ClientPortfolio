@@ -15,13 +15,13 @@ export default class extends Component {
               return (
            <div>
 
-               <MenuBar/>
-							 <Hero />
-							 <IntroHeader/>
-							 <BioMini/>
-							 <PortfolioPreview/>
-							 <ContactForm/>
-							 <Footer/>
+								<MenuBar/>
+								<Hero />
+								<IntroHeader/>
+								<BioMini/>
+								<PortfolioPreview/>
+								<ContactForm/>
+								<Footer/>
 
            </div>
        )
