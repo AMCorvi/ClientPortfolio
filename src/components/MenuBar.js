@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import scale from "../utils/scale.js";
 
 export default class MenuBar extends Component {
   state = {}
@@ -11,17 +12,12 @@ export default class MenuBar extends Component {
     const styles = {
         menuContainer: {
             borderRadiusTop:"0px 0px 0px 0px"
-        }
-        ,img:{
-            // height:80,
-            // width:30
-            // transform:"scale(2)",
-            // left: 50
+						, marginTop: scale[3]
         }
     }
 
     return (
-      <Menu style={styles.menuContainer} size="massive" secondary stackable>
+      <Menu style={styles.menuContainer} widths={3} size="massive" secondary stackable pointing>
 
         <Menu.Item
           name='Home'
