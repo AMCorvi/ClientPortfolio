@@ -12,7 +12,7 @@ export default class MenuBar extends Component {
     const styles = {
         menuContainer: {
             borderRadiusTop:"0px 0px 0px 0px"
-						, marginTop: scale[3]
+						, marginTop: scale[6]
         }
     }
 
